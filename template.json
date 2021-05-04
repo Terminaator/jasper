@@ -1,0 +1,361 @@
+{
+    "tegevusalad": [
+        {
+            "__comment__": "Maismaaloomade vedamine",
+            "type": "LOAGA_VEDAMINE_MAA",
+            "frames": [
+                {
+                    "parameter": "$F{loomaliik}.getNimetus()",
+                    "title": "\"Loomaliik\"",
+                    "check": "$F{loomaliik} != null"
+                },
+                {
+                    "parameter": "$F{tegevusalaNimetus}.getNimetus()",
+                    "title": "\"Tegevusala nimetus\"",
+                    "check": "$F{tegevusalaNimetus} != null"
+                },
+                {
+                    "parameter": "$F{tegevusalaTapsustus}.getNimetus()",
+                    "title": "\"Tegevusala täpsustus\"",
+                    "check": "$F{tegevusalaTapsustus} != null"
+                },
+                {
+                    "parameter": "$F{emtak}.getNimetus() + \" \" + $F{emtak}.getKood()",
+                    "title": "\"Klassifikaatori kohane nimetus/EMTAK\"",
+                    "check": "$F{emtak} != null"
+                },
+                {
+                    "parameter": "$F{loomadeArv}",
+                    "title": "\"Loomade arv/hulk\"",
+                    "check": "$F{loomadeArv} != null"
+                },
+                {
+                    "parameter": "$F{kabiloomadKatTekst}",
+                    "title": "\"Kabiloomade kategooria\"",
+                    "check": "$F{kabiloomadKatTekst} != null"
+                },
+                {
+                    "parameter": "$F{kodulinnudKatTekst}",
+                    "title": "\"Kodulindude kategooria\"",
+                    "check": "$F{kodulinnudKatTekst} != null"
+                }
+            ]
+        },
+        {
+            "__comment__": "Veeloomade vedamine",
+            "type": "LOAGA_VEDAMINE_VEELOOM",
+            "frames": [
+                {
+                    "parameter": "$F{loomaliik}.getNimetus()",
+                    "title": "\"Loomaliik\"",
+                    "check": "$F{loomaliik} != null"
+                },
+                {
+                    "parameter": "$F{tegevusalaNimetus}.getNimetus()",
+                    "title": "\"Tegevusala nimetus\"",
+                    "check": "$F{tegevusalaNimetus} != null"
+                },
+                {
+                    "parameter": "$F{tegevusalaTapsustus}.getNimetus()",
+                    "title": "\"Tegevusala täpsustus\"",
+                    "check": "$F{tegevusalaTapsustus} != null"
+                },
+                {
+                    "parameter": "$F{emtak}.getNimetus() + \" \" + $F{emtak}.getKood()",
+                    "title": "\"Klassifikaatori kohane nimetus/EMTAK\"",
+                    "check": "$F{emtak} != null"
+                },
+                {
+                    "parameter": "$F{loomadeArv}",
+                    "title": "\"Veeloomade hulk (t/a)\"",
+                    "check": "$F{loomadeArv} != null"
+                },
+                {
+                    "parameter": "$F{veeloomadeKatTekst}",
+                    "title": "\"Veeloomade kategooria\"",
+                    "check": "$F{veeloomadeKatTekst} != null"
+                }
+            ]
+        },
+        {
+            "__comment__": "Veeloomade pidamine",
+            "type": "LOAGA_VESIVILJELUS",
+            "frames": [
+                {
+                    "parameter": "$F{tegevusalaNimetus}.getNimetus()",
+                    "title": "\"Tegevusala nimetus\"",
+                    "check": "$F{tegevusalaNimetus} != null"
+                },
+                {
+                    "parameter": "$F{emtak}.getNimetus() + \" \" + $F{emtak}.getKood()",
+                    "title": "\"Klassifikaatori kohane nimetus/EMTAK\"",
+                    "check": "$F{emtak} != null"
+                },
+                {
+                    "parameter": "$F{klass}.getNimetus()",
+                    "title": "\"Klass/hõimkond\"",
+                    "check": "$F{klass} != null"
+                },
+                {
+                    "parameter": "$F{tegevuskohaKirjeldus}",
+                    "title": "\"Tegevuskoha kirjeldus\"",
+                    "check": "$F{tegevuskohaKirjeldus} != null"
+                },
+                {
+                    "parameter": "$F{ettevotteTyyp}.getNimetus()",
+                    "title": "\"Vesiviljelusettevõtte tüüp\"",
+                    "check": "$F{ettevotteTyyp} != null"
+                },
+                {
+                    "parameter": "$F{veeloomaLiik}.getNimetus()",
+                    "title": "\"Kasvatatavate vesiviljelusloomade liik\"",
+                    "check": "$F{veeloomaLiik} != null"
+                },
+                {
+                    "parameter": "$F{veeloomaKategooria}.getNimetus()",
+                    "title": "\"Vesiviljelusloomade kategooria\"",
+                    "check": "$F{veeloomaKategooria} != null"
+                },
+                {
+                    "parameter": "$F{veeloomaBiomass}",
+                    "title": "\"Vesiviljelusloomade maksimaalne biomass (kg)\"",
+                    "check": "$F{veeloomaBiomass} != null"
+                },
+                {
+                    "parameter": "$F{veeloomadeArv}",
+                    "title": "\"Vesiviljelusloomade arv (tk)\"",
+                    "check": "$F{veeloomadeArv} != null"
+                },
+                {
+                    "parameter": "$F{tootmiseEesmark}.getNimetus()",
+                    "title": "\"Tootmise eesmärk\"",
+                    "check": "$F{tootmiseEesmark} != null"
+                },
+                {
+                    "parameter": "$F{tootmisTyyp}.getNimetus()",
+                    "title": "\"Tootmise tüüp\"",
+                    "check": "$F{tootmisTyyp} != null"
+                },
+                {
+                    "parameter": "$F{veekasutus}.getNimetus()",
+                    "title": "\"Veevarustuse andmed mandril asuva kasvanduse kohta vee kasutuse järgi\"",
+                    "check": "$F{veekasutus} !=null"
+                },
+                {
+                    "parameter": "$F{veevooluJuhtimine}.getNimetus()",
+                    "title": "\"Veevarustuse andmed mandril asuva kasvanduse kohta veevoolu juhtimise järgi\"",
+                    "check": "$F{veevooluJuhtimine} != null"
+                },
+                {
+                    "parameter": "$F{veevotuAllikas}.getNimetus()",
+                    "title": "\"Veevarustuse andmed mandril asuva kasvanduse kohta veevõtu allika järgi\"",
+                    "check": "$F{veevotuAllikas} != null"
+                },
+                {
+                    "parameter": "$F{heitveeJuhtimine}.getNimetus()",
+                    "title": "\"Heitvee ärajuhtimine\"",
+                    "check": "$F{heitveeJuhtimine} != null"
+                },
+                {
+                    "parameter": "$F{veekasutusluba}",
+                    "title": "\"Veekasutusloa olemasolu\"",
+                    "check": "$F{veekasutusluba} != null"
+                },
+                {
+                    "parameter": "$F{bioturvalisuseKava}",
+                    "title": "\"Bioturvalisuse kava\"",
+                    "check": "$F{bioturvalisuseKava} != null"
+                }
+            ]
+        },
+        {
+            "__comment__": "Maismaaloomade kogumine",
+            "type": "LOAGA_KOGUMINE_MAA",
+            "frames": [
+                {
+                    "parameter": "$F{loomaliik}.getNimetus()",
+                    "title": "\"Loomaliik\"",
+                    "check": "$F{loomaliik} != null"
+                },
+                {
+                    "parameter": "$F{tegevusalaNimetus}.getNimetus()",
+                    "title": "\"Tegevusala nimetus\"",
+                    "check": "$F{tegevusalaNimetus} != null"
+                },
+                {
+                    "parameter": "$F{tegevusalaTapsustus}.getNimetus()",
+                    "title": "\"Tegevusala täpsustus\"",
+                    "check": "$F{tegevusalaTapsustus} != null"
+                },
+                {
+                    "parameter": "$F{emtak}.getNimetus() + \" \" + $F{emtak}.getKood()",
+                    "title": "\"Klassifikaatori kohane nimetus/EMTAK\"",
+                    "check": "$F{emtak} != null"
+                },
+                {
+                    "parameter": "$F{loomadeArv}",
+                    "title": "\"Loomade arv/hulk\"",
+                    "check": "$F{loomadeArv} != null"
+                },
+                {
+                    "parameter": "$F{kabiloomadKatTekst}",
+                    "title": "\"Kabiloomade kategooria\"",
+                    "check": "$F{kabiloomadKatTekst} != null"
+                },
+                {
+                    "parameter": "$F{kodulinnudKatTekst}",
+                    "title": "\"Kodulindude kategooria\"",
+                    "check": "$F{kodulinnudKatTekst} != null"
+                }
+            ]
+        },
+        {
+            "__comment__": "Kogumiskeskus/varjupaik",
+            "type": "LOAGA_LEMMIKU_VARJUPAIK",
+            "frames": [
+                {
+                    "parameter": "$F{loomaliik}.getNimetus()",
+                    "title": "\"Loomaliik\"",
+                    "check": "$F{loomaliik} != null"
+                },
+                {
+                    "parameter": "$F{tegevusalaNimetus}.getNimetus()",
+                    "title": "\"Tegevusala nimetus\"",
+                    "check": "$F{tegevusalaNimetus} != null"
+                },
+                {
+                    "parameter": "$F{tegevusalaTapsustus}.getNimetus()",
+                    "title": "\"Tegevusala täpsustus\"",
+                    "check": "$F{tegevusalaTapsustus} != null"
+                },
+                {
+                    "parameter": "$F{emtak}.getNimetus() + \" \" + $F{emtak}.getKood()",
+                    "title": "\"Klassifikaatori kohane nimetus/EMTAK\"",
+                    "check": "$F{emtak} != null"
+                },
+                {
+                    "parameter": "$F{loomadeArv}",
+                    "title": "\"Loomade arv/hulk\"",
+                    "check": "$F{loomadeArv} != null"
+                },
+                {
+                    "parameter": "$F{lemmikloomadeKatTekst}",
+                    "title": "\"Lemmikloomade kategooria\"",
+                    "check": "$F{lemmikloomadeKatTekst} != null"
+                }
+            ]
+        },
+        {
+            "__comment__": "Loomne paljundusmaterjal teise liikmesriiki viimiseks",
+            "type": "LOAGA_LOOMNE_PALJUNDUS",
+            "frames": [
+                {
+                    "parameter": "$F{loomaliik}.getNimetus()",
+                    "title": "\"Loomaliik\"",
+                    "check": "$F{loomaliik} != null"
+                },
+                {
+                    "parameter": "$F{tegevusalaNimetus}.getNimetus()",
+                    "title": "\"Tegevusala nimetus\"",
+                    "check": "$F{tegevusalaNimetus} != null"
+                },
+                {
+                    "parameter": "$F{tegevusalaTapsustus}.getNimetus()",
+                    "title": "\"Tegevusala täpsustus\"",
+                    "check": "$F{tegevusalaTapsustus} != null"
+                },
+                {
+                    "parameter": "$F{emtak}.getNimetus() + \" \" + $F{emtak}.getKood()",
+                    "title": "\"Klassifikaatori kohane nimetus/EMTAK\"",
+                    "check": "$F{emtak} != null"
+                },
+                {
+                    "parameter": "$F{tegevuskohaKirjeldus}",
+                    "title": "\"Tegevuskoha kirjeldus\"",
+                    "check": "$F{tegevuskohaKirjeldus} != null"
+                },
+                {
+                    "parameter": "$F{paljundusmaterjaliEttevote}.getNimetus()",
+                    "title": "\"Heakskiidetud loomse paljundusmaterjali ettevõte\"",
+                    "check": "$F{paljundusmaterjaliEttevote} != null"
+                },
+                {
+                    "parameter": "$F{loomadeArv}",
+                    "title": "\"Loomade arv/hulk\"",
+                    "check": "$F{loomadeArv} != null"
+                },
+                {
+                    "parameter": "$F{paljundusmatKatTekst}",
+                    "title": "\"Paljundusmaterjali kategooria\"",
+                    "check": "$F{paljundusmatKatTekst} != null"
+                },
+                {
+                    "parameter": "$F{paljundusmatKategooria}.getSeemnedoosiArv()",
+                    "title": "\"Seemneraku dooside arv aastas\"",
+                    "check": "$F{paljundusmatKategooria} != null"
+                },
+                {
+                    "parameter": "$F{paljundusmatKategooria}.getMunadoosiArv()",
+                    "title": "\"Munaraku dooside arv aastas\"",
+                    "check": "$F{paljundusmatKategooria} != null"
+                },
+                {
+                    "parameter": "$F{paljundusmatKategooria}.getEmbruoArv()",
+                    "title": "\"Eraldatavate embrüode arv aastas\"",
+                    "check": "$F{paljundusmatKategooria} != null"
+                },
+                {
+                    "parameter": "$F{paljundusmatKategooria}.getHaudemunaArv()",
+                    "title": "\"Haudemunade arv aastas\"",
+                    "check": "$F{paljundusmatKategooria} != null"
+                }
+            ]
+        },
+        {
+            "__comment__": "Kodulindude pidamine teise liikmesriiki viimiseks",
+            "type": "LOAGA_PIDAMINE_KODULIND",
+            "frames": [
+                {
+                    "parameter": "$F{loomaliik}.getNimetus()",
+                    "title": "\"Loomaliik\"",
+                    "check": "$F{loomaliik} != null"
+                },
+                {
+                    "parameter": "$F{tegevusalaNimetus}.getNimetus()",
+                    "title": "\"Tegevusala nimetus\"",
+                    "check": "$F{tegevusalaNimetus} != null"
+                },
+                {
+                    "parameter": "$F{tegevusalaTapsustus}.getNimetus()",
+                    "title": "\"Tegevusala täpsustus\"",
+                    "check": "$F{tegevusalaTapsustus} != null"
+                },
+                {
+                    "parameter": "$F{emtak}.getNimetus() + \" \" + $F{emtak}.getKood()",
+                    "title": "\"Klassifikaatori kohane nimetus/EMTAK\"",
+                    "check": "$F{emtak} != null"
+                },
+                {
+                    "parameter": "$F{tegevuskohaKirjeldus}",
+                    "title": "\"Tegevuskoha kirjeldus\"",
+                    "check": "$F{tegevuskohaKirjeldus} != null"
+                },
+                {
+                    "parameter": "$F{loomadeArv}",
+                    "title": "\"Kodulindude arv/hulk\"",
+                    "check": "$F{loomadeArv} != null"
+                },
+                {
+                    "parameter": "$F{maksimumvoimsus}",
+                    "title": "\"Maksimumvõimsus\"",
+                    "check": "$F{maksimumvoimsus} != null"
+                },
+                {
+                    "parameter": "$F{munaKogus}",
+                    "title": "\"Munade kogus (tk/a)\"",
+                    "check": "$F{munaKogus} != null"
+                }
+            ]
+        }
+    ]
+}
