@@ -25,7 +25,7 @@
                     "check": "$F{emtak} != null"
                 },
                 {
-                    "parameter": "$F{loomadeArv}",
+                    "parameter": "Math.round($F{loomadeArv})",
                     "title": "\"Loomade arv/hulk\"",
                     "check": "$F{loomadeArv} != null"
                 },
@@ -66,7 +66,7 @@
                     "check": "$F{emtak} != null"
                 },
                 {
-                    "parameter": "$F{loomadeArv}",
+                    "parameter": "Math.round($F{loomadeArv})",
                     "title": "\"Veeloomade hulk (t/a)\"",
                     "check": "$F{loomadeArv} != null"
                 },
@@ -157,12 +157,12 @@
                     "check": "$F{heitveeJuhtimine} != null"
                 },
                 {
-                    "parameter": "$F{veekasutusluba}",
+                    "parameter": "$F{veekasutusluba} ? \"Jah\" : \"Ei\"",
                     "title": "\"Veekasutusloa olemasolu\"",
                     "check": "$F{veekasutusluba} != null"
                 },
                 {
-                    "parameter": "$F{bioturvalisuseKava}",
+                    "parameter": "$F{bioturvalisuseKava} ? \"Jah\" : \"Ei\"",
                     "title": "\"Bioturvalisuse kava\"",
                     "check": "$F{bioturvalisuseKava} != null"
                 }
@@ -193,7 +193,7 @@
                     "check": "$F{emtak} != null"
                 },
                 {
-                    "parameter": "$F{loomadeArv}",
+                    "parameter": "Math.round($F{loomadeArv})",
                     "title": "\"Loomade arv/hulk\"",
                     "check": "$F{loomadeArv} != null"
                 },
@@ -234,7 +234,7 @@
                     "check": "$F{emtak} != null"
                 },
                 {
-                    "parameter": "$F{loomadeArv}",
+                    "parameter": "Math.round($F{loomadeArv})",
                     "title": "\"Loomade arv/hulk\"",
                     "check": "$F{loomadeArv} != null"
                 },
@@ -280,7 +280,7 @@
                     "check": "$F{paljundusmaterjaliEttevote} != null"
                 },
                 {
-                    "parameter": "$F{loomadeArv}",
+                    "parameter": "Math.round($F{loomadeArv})",
                     "title": "\"Loomade arv/hulk\"",
                     "check": "$F{loomadeArv} != null"
                 },
@@ -292,22 +292,22 @@
                 {
                     "parameter": "$F{paljundusmatKategooria}.getSeemnedoosiArv()",
                     "title": "\"Seemneraku dooside arv aastas\"",
-                    "check": "$F{paljundusmatKategooria} != null"
+                    "check": "$F{paljundusmatKategooria} != null && $F{paljundusmatKategooria}.getSeemnedoosiArv() != null"
                 },
                 {
                     "parameter": "$F{paljundusmatKategooria}.getMunadoosiArv()",
                     "title": "\"Munaraku dooside arv aastas\"",
-                    "check": "$F{paljundusmatKategooria} != null"
+                    "check": "$F{paljundusmatKategooria} != null && $F{paljundusmatKategooria}.getMunadoosiArv() != null"
                 },
                 {
                     "parameter": "$F{paljundusmatKategooria}.getEmbruoArv()",
                     "title": "\"Eraldatavate embrüode arv aastas\"",
-                    "check": "$F{paljundusmatKategooria} != null"
+                    "check": "$F{paljundusmatKategooria} != null && $F{paljundusmatKategooria}.getEmbruoArv() != null"
                 },
                 {
                     "parameter": "$F{paljundusmatKategooria}.getHaudemunaArv()",
                     "title": "\"Haudemunade arv aastas\"",
-                    "check": "$F{paljundusmatKategooria} != null"
+                    "check": "$F{paljundusmatKategooria} != null && $F{paljundusmatKategooria}.getHaudemunaArv() != null"
                 }
             ]
         },
@@ -341,7 +341,7 @@
                     "check": "$F{tegevuskohaKirjeldus} != null"
                 },
                 {
-                    "parameter": "$F{loomadeArv}",
+                    "parameter": "Math.round($F{loomadeArv})",
                     "title": "\"Kodulindude arv/hulk\"",
                     "check": "$F{loomadeArv} != null"
                 },
@@ -357,5 +357,80 @@
                 }
             ]
         }
+    ],
+    "veovahendid": [
+        {
+            "parameter": "$F{veovahendiRegNr}",
+            "title": "\"Veovahendi registreerimisnumber\"",
+            "check": "$F{veovahendiRegNr} != null"
+        },
+        {
+            "parameter": "$F{sertifikaadiNr}",
+            "title": "\"Vastavussertifikaadi number\"",
+            "check": "$F{sertifikaadiNr} != null"
+        },
+        {
+            "parameter": "$F{sertifikaadiOmanikNimi}",
+            "title": "\"Vastavussertifikaati omava isiku nimi\"",
+            "check": "$F{sertifikaadiOmanikNimi} != null"
+        },
+        {
+            "parameter": "$F{sertifikaadiOmanikKood}",
+            "title": "\"Vastavussertifikaati omava isiku kood/sünniaeg\"",
+            "check": "$F{sertifikaadiOmanikKood} != null"
+        },
+        {
+            "parameter": "$F{lubatavadLoomaliigid}",
+            "title": "\"Veoks lubatavad loomaliigid\"",
+            "check": "$F{lubatavadLoomaliigid} != null"
+        },
+        {
+            "parameter": "$F{navigatsioon} ? \"Jah\" : \"Ei\"",
+            "title": "\"Veovahendi varustatus navigatsioonisüsteemiga\"",
+            "check": "$F{navigatsioon} != null"
+        },
+        {
+            "parameter": "$F{salvestamiseVoimalus}",
+            "title": "\"Navigatsioonisüsteemil teekonna salvestamise võimalus\"",
+            "check": "$F{salvestamiseVoimalus} != null"
+        },
+        {
+            "parameter": "$F{pindalaLoomale}",
+            "title": "\"Loomadele kasutatav pindala veovahendis (m2)\"",
+            "check": "$F{pindalaLoomale} != null"
+        },
+        {
+            "parameter": "$F{jooturiOlemasolu} ? \"Jah\" : \"Ei\"",
+            "title": "\"Jooturite olemasolu\"",
+            "check": "$F{jooturiOlemasolu} != null"
+        },
+        {
+            "parameter": "$F{joogiveeMahutatavus}",
+            "title": "\"Loomade joogivee mahutatavus (m3)\"",
+            "check": "$F{joogiveeMahutatavus} != null"
+        },
+        {
+            "parameter": "$F{temperatuuriRegul} ? \"Jah\" : \"Ei\"",
+            "title": "\"Loomade veoruumi temperatuuri reguleerimise süsteemi olemasolu\"",
+            "check": "$F{temperatuuriRegul} != null"
+        }
+    ],
+    "padevustunnistused": [
+        {
+            "parameter": "$F{sertifikaadiOmanikNimi}",
+            "title": "\"Sõiduki juhi nimi\"",
+            "check": "$F{sertifikaadiOmanikNimi} != null"
+        },
+        {
+            "parameter": "$F{sertifikaadiOmanikKood}",
+            "title": "\"Sõiduki juhi isikukood/sünniaeg\"",
+            "check": "$F{sertifikaadiOmanikKood} != null"
+        },
+        {
+            "parameter": "$F{sertifikaadiNr}",
+            "title": "\"Sõiduki juhi pädevustunnistuse number\"",
+            "check": "$F{sertifikaadiNr} != null"
+        }
     ]
+
 }
