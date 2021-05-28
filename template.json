@@ -66,9 +66,9 @@
                     "check": "$F{emtak} != null"
                 },
                 {
-                    "parameter": "Math.round($F{loomadeArv})",
+                    "parameter": "Math.round($F{veeloomadeArv})",
                     "title": "\"Veeloomade hulk (t/a)\"",
-                    "check": "$F{loomadeArv} != null"
+                    "check": "$F{veeloomadeArv} != null"
                 },
                 {
                     "parameter": "$F{veeloomadeKatTekst}",
@@ -405,7 +405,7 @@
             "check": "$F{jooturiOlemasolu} != null"
         },
         {
-            "parameter": "$F{joogiveeMahutatavus}",
+            "parameter": "Math.round($F{joogiveeMahutatavus})",
             "title": "\"Loomade joogivee mahutatavus (m3)\"",
             "check": "$F{joogiveeMahutatavus} != null"
         },

@@ -437,10 +437,10 @@
                 </frame>
                 <!-- $F{emtak}.getNimetus() + " " + $F{emtak}.getKood() -->
 
-                <!-- Math.round($F{loomadeArv}) -->
+                <!-- Math.round($F{veeloomadeArv}) -->
                 <frame>
                     <reportElement positionType="Float" stretchType="NoStretch" x="0" y="115" width="473" height="23" isRemoveLineWhenBlank="true" uuid="0140ba9b-f2f0-494c-82bc-caf6b5efc63e">
-                        <printWhenExpression><![CDATA[$F{loomadeArv} != null]]></printWhenExpression>
+                        <printWhenExpression><![CDATA[$F{veeloomadeArv} != null]]></printWhenExpression>
                     </reportElement>
                     <textField isStretchWithOverflow="true">
                         <reportElement stretchType="RelativeToTallestObject" x="0" y="0" width="196" height="23" uuid="a8b7d505-a6ad-4359-9263-23ac087b19ff"/>
@@ -466,10 +466,10 @@
                         <textElement verticalAlignment="Middle">
                             <font fontName="Arial Narrow" size="11"/>
                         </textElement>
-                        <textFieldExpression><![CDATA[Math.round($F{loomadeArv})]]></textFieldExpression>
+                        <textFieldExpression><![CDATA[Math.round($F{veeloomadeArv})]]></textFieldExpression>
                     </textField>
                 </frame>
-                <!-- Math.round($F{loomadeArv}) -->
+                <!-- Math.round($F{veeloomadeArv}) -->
 
                 <!-- $F{veeloomadeKatTekst} -->
                 <frame>
@@ -2587,7 +2587,7 @@
                 </frame>
                 <!-- $F{jooturiOlemasolu} ? "Jah" : "Ei" -->
 
-                <!-- $F{joogiveeMahutatavus} -->
+                <!-- Math.round($F{joogiveeMahutatavus}) -->
                 <frame>
                     <reportElement positionType="Float" stretchType="NoStretch" x="0" y="230" width="473" height="23" isRemoveLineWhenBlank="true" uuid="0140ba9b-f2f0-494c-82bc-caf6b5efc63e">
                         <printWhenExpression><![CDATA[$F{joogiveeMahutatavus} != null]]></printWhenExpression>
@@ -2616,10 +2616,10 @@
                         <textElement verticalAlignment="Middle">
                             <font fontName="Arial Narrow" size="11"/>
                         </textElement>
-                        <textFieldExpression><![CDATA[$F{joogiveeMahutatavus}]]></textFieldExpression>
+                        <textFieldExpression><![CDATA[Math.round($F{joogiveeMahutatavus})]]></textFieldExpression>
                     </textField>
                 </frame>
-                <!-- $F{joogiveeMahutatavus} -->
+                <!-- Math.round($F{joogiveeMahutatavus}) -->
 
                 <!-- $F{temperatuuriRegul} ? "Jah" : "Ei" -->
                 <frame>
