@@ -228,5 +228,5 @@ with open('template.json', encoding='utf-8') as f:
 
     with open("./output/all.xml", "w", encoding='utf-8') as file:
         addTegevusalad(file, data["tegevusalad"])
-        addVeovahendid(file, data["veovahendid"])
-        padevustunnistused(file, data["padevustunnistused"])
+        #addVeovahendid(file, data["veovahendid"])
+        #padevustunnistused(file, data["padevustunnistused"])

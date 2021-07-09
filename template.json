@@ -356,6 +356,32 @@
                     "check": "$F{munaKogus} != null"
                 }
             ]
+        },
+        {
+            "__comment__": "Loomsed kõrvalsaadused ja nendest saadud tooted",
+            "type": "LOAGA_KORVALSAADUS_TOOTED",
+            "frames": [
+                {
+                    "parameter": "$F{tegevusalaNimetus}.getNimetus()",
+                    "title": "\"Tegevusala nimetus\"",
+                    "check": "$F{tegevusalaNimetus} != null"
+                },
+                {
+                    "parameter": "$F{tegevusalaTapsustus}.getNimetus()",
+                    "title": "\"Tegevusala täpsustus\"",
+                    "check": "$F{tegevusalaTapsustus} != null"
+                },
+                {
+                    "parameter": "$F{emtak}.getNimetus() + \" \" + $F{emtak}.getKood()",
+                    "title": "\"Klassifikaatori kohane nimetus/EMTAK\"",
+                    "check": "$F{emtak} != null"
+                },
+                {
+                    "parameter": "$F{katMatTekst}",
+                    "title": "\"Kategooria/Kategooria materjal\"",
+                    "check": "$F{katMatTekst} != null"
+                }
+            ]
         }
     ],
     "veovahendid": [
