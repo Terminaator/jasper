@@ -206,12 +206,12 @@ def addVeovahendidFrame(file, veovahend, y):
     file.write(completedFrame)
 
 def addTegevusalad(file, tegevusalad, y=23):
-    file.write(tegevusaladStart)
+    #file.write(tegevusaladStart)
     for tegevusala in tegevusalad:
         file.write(frameStart.replace("REPLACE_TYPE", tegevusala["type"]))
         formatTegevusala(file, tegevusala)
         file.write(frameStop.replace("REPLACE_TYPE", tegevusala["type"]))
-    file.write(tegevusaladEnd)
+    #file.write(tegevusaladEnd)
 
 def formatTegevusala(file, tegevusala ,y=23):
     for parameter in tegevusala["frames"]:

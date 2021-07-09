@@ -1,0 +1,247 @@
+
+            <!-- start LOAGA_VEDAMINE_MAA start-->
+            <frame>
+                <reportElement x="0" y="23" width="473" height="0" isRemoveLineWhenBlank="true" uuid="0140ba9b-f2f0-494c-82bc-caf6b5efc63e">
+                    <printWhenExpression><![CDATA[$F{tegevuseYldnimetus}.getKood().equals("LOAGA_VEDAMINE_MAA")]]></printWhenExpression>
+                </reportElement>
+
+                <!-- $F{loomaliik}.getNimetus() -->
+                <frame>
+                    <reportElement positionType="Float" stretchType="NoStretch" x="0" y="23" width="473" height="23" isRemoveLineWhenBlank="true" uuid="0140ba9b-f2f0-494c-82bc-caf6b5efc63e">
+                        <printWhenExpression><![CDATA[$F{loomaliik} != null]]></printWhenExpression>
+                    </reportElement>
+                    <textField isStretchWithOverflow="true">
+                        <reportElement stretchType="RelativeToTallestObject" x="0" y="0" width="196" height="23" uuid="a8b7d505-a6ad-4359-9263-23ac087b19ff"/>
+                        <box topPadding="1" leftPadding="5" bottomPadding="1" rightPadding="1">
+                            <topPen lineWidth="0.5" lineStyle="Solid"/>
+                            <leftPen lineWidth="0.5" lineStyle="Solid"/>
+                            <bottomPen lineWidth="0.5" lineStyle="Solid"/>
+                            <rightPen lineWidth="0.5" lineStyle="Solid"/>
+                        </box>
+                        <textElement verticalAlignment="Middle">
+                            <font fontName="Arial Narrow" size="11" isBold="false"/>
+                        </textElement>
+                        <textFieldExpression><![CDATA["Loomaliik"]]></textFieldExpression>
+                    </textField>
+                    <textField isStretchWithOverflow="true" isBlankWhenNull="true">
+                        <reportElement stretchType="RelativeToTallestObject" x="196" y="0" width="277" height="23" uuid="6a8c4e04-4278-4595-845f-67be590d9210"/>
+                        <box topPadding="1" leftPadding="5" bottomPadding="1" rightPadding="1">
+                            <topPen lineWidth="0.5" lineStyle="Solid"/>
+                            <leftPen lineWidth="0.5" lineStyle="Solid"/>
+                            <bottomPen lineWidth="0.5" lineStyle="Solid"/>
+                            <rightPen lineWidth="0.5" lineStyle="Solid"/>
+                        </box>
+                        <textElement verticalAlignment="Middle">
+                            <font fontName="Arial Narrow" size="11"/>
+                        </textElement>
+                        <textFieldExpression><![CDATA[$F{loomaliik}.getNimetus()]]></textFieldExpression>
+                    </textField>
+                </frame>
+                <!-- $F{loomaliik}.getNimetus() -->
+
+                <!-- $F{tegevusalaNimetus}.getNimetus() -->
+                <frame>
+                    <reportElement positionType="Float" stretchType="NoStretch" x="0" y="46" width="473" height="23" isRemoveLineWhenBlank="true" uuid="0140ba9b-f2f0-494c-82bc-caf6b5efc63e">
+                        <printWhenExpression><![CDATA[$F{tegevusalaNimetus} != null]]></printWhenExpression>
+                    </reportElement>
+                    <textField isStretchWithOverflow="true">
+                        <reportElement stretchType="RelativeToTallestObject" x="0" y="0" width="196" height="23" uuid="a8b7d505-a6ad-4359-9263-23ac087b19ff"/>
+                        <box topPadding="1" leftPadding="5" bottomPadding="1" rightPadding="1">
+                            <topPen lineWidth="0.5" lineStyle="Solid"/>
+                            <leftPen lineWidth="0.5" lineStyle="Solid"/>
+                            <bottomPen lineWidth="0.5" lineStyle="Solid"/>
+                            <rightPen lineWidth="0.5" lineStyle="Solid"/>
+                        </box>
+                        <textElement verticalAlignment="Middle">
+                            <font fontName="Arial Narrow" size="11" isBold="false"/>
+                        </textElement>
+                        <textFieldExpression><![CDATA["Tegevusala nimetus"]]></textFieldExpression>
+                    </textField>
+                    <textField isStretchWithOverflow="true" isBlankWhenNull="true">
+                        <reportElement stretchType="RelativeToTallestObject" x="196" y="0" width="277" height="23" uuid="6a8c4e04-4278-4595-845f-67be590d9210"/>
+                        <box topPadding="1" leftPadding="5" bottomPadding="1" rightPadding="1">
+                            <topPen lineWidth="0.5" lineStyle="Solid"/>
+                            <leftPen lineWidth="0.5" lineStyle="Solid"/>
+                            <bottomPen lineWidth="0.5" lineStyle="Solid"/>
+                            <rightPen lineWidth="0.5" lineStyle="Solid"/>
+                        </box>
+                        <textElement verticalAlignment="Middle">
+                            <font fontName="Arial Narrow" size="11"/>
+                        </textElement>
+                        <textFieldExpression><![CDATA[$F{tegevusalaNimetus}.getNimetus()]]></textFieldExpression>
+                    </textField>
+                </frame>
+                <!-- $F{tegevusalaNimetus}.getNimetus() -->
+
+                <!-- $F{tegevusalaTapsustus}.getNimetus() -->
+                <frame>
+                    <reportElement positionType="Float" stretchType="NoStretch" x="0" y="69" width="473" height="23" isRemoveLineWhenBlank="true" uuid="0140ba9b-f2f0-494c-82bc-caf6b5efc63e">
+                        <printWhenExpression><![CDATA[$F{tegevusalaTapsustus} != null]]></printWhenExpression>
+                    </reportElement>
+                    <textField isStretchWithOverflow="true">
+                        <reportElement stretchType="RelativeToTallestObject" x="0" y="0" width="196" height="23" uuid="a8b7d505-a6ad-4359-9263-23ac087b19ff"/>
+                        <box topPadding="1" leftPadding="5" bottomPadding="1" rightPadding="1">
+                            <topPen lineWidth="0.5" lineStyle="Solid"/>
+                            <leftPen lineWidth="0.5" lineStyle="Solid"/>
+                            <bottomPen lineWidth="0.5" lineStyle="Solid"/>
+                            <rightPen lineWidth="0.5" lineStyle="Solid"/>
+                        </box>
+                        <textElement verticalAlignment="Middle">
+                            <font fontName="Arial Narrow" size="11" isBold="false"/>
+                        </textElement>
+                        <textFieldExpression><![CDATA["Tegevusala täpsustus"]]></textFieldExpression>
+                    </textField>
+                    <textField isStretchWithOverflow="true" isBlankWhenNull="true">
+                        <reportElement stretchType="RelativeToTallestObject" x="196" y="0" width="277" height="23" uuid="6a8c4e04-4278-4595-845f-67be590d9210"/>
+                        <box topPadding="1" leftPadding="5" bottomPadding="1" rightPadding="1">
+                            <topPen lineWidth="0.5" lineStyle="Solid"/>
+                            <leftPen lineWidth="0.5" lineStyle="Solid"/>
+                            <bottomPen lineWidth="0.5" lineStyle="Solid"/>
+                            <rightPen lineWidth="0.5" lineStyle="Solid"/>
+                        </box>
+                        <textElement verticalAlignment="Middle">
+                            <font fontName="Arial Narrow" size="11"/>
+                        </textElement>
+                        <textFieldExpression><![CDATA[$F{tegevusalaTapsustus}.getNimetus()]]></textFieldExpression>
+                    </textField>
+                </frame>
+                <!-- $F{tegevusalaTapsustus}.getNimetus() -->
+
+                <!-- $F{emtak}.getNimetus() + " " + $F{emtak}.getKood() -->
+                <frame>
+                    <reportElement positionType="Float" stretchType="NoStretch" x="0" y="92" width="473" height="23" isRemoveLineWhenBlank="true" uuid="0140ba9b-f2f0-494c-82bc-caf6b5efc63e">
+                        <printWhenExpression><![CDATA[$F{emtak} != null]]></printWhenExpression>
+                    </reportElement>
+                    <textField isStretchWithOverflow="true">
+                        <reportElement stretchType="RelativeToTallestObject" x="0" y="0" width="196" height="23" uuid="a8b7d505-a6ad-4359-9263-23ac087b19ff"/>
+                        <box topPadding="1" leftPadding="5" bottomPadding="1" rightPadding="1">
+                            <topPen lineWidth="0.5" lineStyle="Solid"/>
+                            <leftPen lineWidth="0.5" lineStyle="Solid"/>
+                            <bottomPen lineWidth="0.5" lineStyle="Solid"/>
+                            <rightPen lineWidth="0.5" lineStyle="Solid"/>
+                        </box>
+                        <textElement verticalAlignment="Middle">
+                            <font fontName="Arial Narrow" size="11" isBold="false"/>
+                        </textElement>
+                        <textFieldExpression><![CDATA["Klassifikaatori kohane nimetus/EMTAK"]]></textFieldExpression>
+                    </textField>
+                    <textField isStretchWithOverflow="true" isBlankWhenNull="true">
+                        <reportElement stretchType="RelativeToTallestObject" x="196" y="0" width="277" height="23" uuid="6a8c4e04-4278-4595-845f-67be590d9210"/>
+                        <box topPadding="1" leftPadding="5" bottomPadding="1" rightPadding="1">
+                            <topPen lineWidth="0.5" lineStyle="Solid"/>
+                            <leftPen lineWidth="0.5" lineStyle="Solid"/>
+                            <bottomPen lineWidth="0.5" lineStyle="Solid"/>
+                            <rightPen lineWidth="0.5" lineStyle="Solid"/>
+                        </box>
+                        <textElement verticalAlignment="Middle">
+                            <font fontName="Arial Narrow" size="11"/>
+                        </textElement>
+                        <textFieldExpression><![CDATA[$F{emtak}.getNimetus() + " " + $F{emtak}.getKood()]]></textFieldExpression>
+                    </textField>
+                </frame>
+                <!-- $F{emtak}.getNimetus() + " " + $F{emtak}.getKood() -->
+
+                <!-- Math.round($F{loomadeArv}) -->
+                <frame>
+                    <reportElement positionType="Float" stretchType="NoStretch" x="0" y="115" width="473" height="23" isRemoveLineWhenBlank="true" uuid="0140ba9b-f2f0-494c-82bc-caf6b5efc63e">
+                        <printWhenExpression><![CDATA[$F{loomadeArv} != null]]></printWhenExpression>
+                    </reportElement>
+                    <textField isStretchWithOverflow="true">
+                        <reportElement stretchType="RelativeToTallestObject" x="0" y="0" width="196" height="23" uuid="a8b7d505-a6ad-4359-9263-23ac087b19ff"/>
+                        <box topPadding="1" leftPadding="5" bottomPadding="1" rightPadding="1">
+                            <topPen lineWidth="0.5" lineStyle="Solid"/>
+                            <leftPen lineWidth="0.5" lineStyle="Solid"/>
+                            <bottomPen lineWidth="0.5" lineStyle="Solid"/>
+                            <rightPen lineWidth="0.5" lineStyle="Solid"/>
+                        </box>
+                        <textElement verticalAlignment="Middle">
+                            <font fontName="Arial Narrow" size="11" isBold="false"/>
+                        </textElement>
+                        <textFieldExpression><![CDATA["Loomade arv/hulk"]]></textFieldExpression>
+                    </textField>
+                    <textField isStretchWithOverflow="true" isBlankWhenNull="true">
+                        <reportElement stretchType="RelativeToTallestObject" x="196" y="0" width="277" height="23" uuid="6a8c4e04-4278-4595-845f-67be590d9210"/>
+                        <box topPadding="1" leftPadding="5" bottomPadding="1" rightPadding="1">
+                            <topPen lineWidth="0.5" lineStyle="Solid"/>
+                            <leftPen lineWidth="0.5" lineStyle="Solid"/>
+                            <bottomPen lineWidth="0.5" lineStyle="Solid"/>
+                            <rightPen lineWidth="0.5" lineStyle="Solid"/>
+                        </box>
+                        <textElement verticalAlignment="Middle">
+                            <font fontName="Arial Narrow" size="11"/>
+                        </textElement>
+                        <textFieldExpression><![CDATA[Math.round($F{loomadeArv})]]></textFieldExpression>
+                    </textField>
+                </frame>
+                <!-- Math.round($F{loomadeArv}) -->
+
+                <!-- $F{kabiloomadKatTekst} -->
+                <frame>
+                    <reportElement positionType="Float" stretchType="NoStretch" x="0" y="138" width="473" height="23" isRemoveLineWhenBlank="true" uuid="0140ba9b-f2f0-494c-82bc-caf6b5efc63e">
+                        <printWhenExpression><![CDATA[$F{kabiloomadKatTekst} != null]]></printWhenExpression>
+                    </reportElement>
+                    <textField isStretchWithOverflow="true">
+                        <reportElement stretchType="RelativeToTallestObject" x="0" y="0" width="196" height="23" uuid="a8b7d505-a6ad-4359-9263-23ac087b19ff"/>
+                        <box topPadding="1" leftPadding="5" bottomPadding="1" rightPadding="1">
+                            <topPen lineWidth="0.5" lineStyle="Solid"/>
+                            <leftPen lineWidth="0.5" lineStyle="Solid"/>
+                            <bottomPen lineWidth="0.5" lineStyle="Solid"/>
+                            <rightPen lineWidth="0.5" lineStyle="Solid"/>
+                        </box>
+                        <textElement verticalAlignment="Middle">
+                            <font fontName="Arial Narrow" size="11" isBold="false"/>
+                        </textElement>
+                        <textFieldExpression><![CDATA["Kabiloomade kategooria"]]></textFieldExpression>
+                    </textField>
+                    <textField isStretchWithOverflow="true" isBlankWhenNull="true">
+                        <reportElement stretchType="RelativeToTallestObject" x="196" y="0" width="277" height="23" uuid="6a8c4e04-4278-4595-845f-67be590d9210"/>
+                        <box topPadding="1" leftPadding="5" bottomPadding="1" rightPadding="1">
+                            <topPen lineWidth="0.5" lineStyle="Solid"/>
+                            <leftPen lineWidth="0.5" lineStyle="Solid"/>
+                            <bottomPen lineWidth="0.5" lineStyle="Solid"/>
+                            <rightPen lineWidth="0.5" lineStyle="Solid"/>
+                        </box>
+                        <textElement verticalAlignment="Middle">
+                            <font fontName="Arial Narrow" size="11"/>
+                        </textElement>
+                        <textFieldExpression><![CDATA[$F{kabiloomadKatTekst}]]></textFieldExpression>
+                    </textField>
+                </frame>
+                <!-- $F{kabiloomadKatTekst} -->
+
+                <!-- $F{kodulinnudKatTekst} -->
+                <frame>
+                    <reportElement positionType="Float" stretchType="NoStretch" x="0" y="161" width="473" height="23" isRemoveLineWhenBlank="true" uuid="0140ba9b-f2f0-494c-82bc-caf6b5efc63e">
+                        <printWhenExpression><![CDATA[$F{kodulinnudKatTekst} != null]]></printWhenExpression>
+                    </reportElement>
+                    <textField isStretchWithOverflow="true">
+                        <reportElement stretchType="RelativeToTallestObject" x="0" y="0" width="196" height="23" uuid="a8b7d505-a6ad-4359-9263-23ac087b19ff"/>
+                        <box topPadding="1" leftPadding="5" bottomPadding="1" rightPadding="1">
+                            <topPen lineWidth="0.5" lineStyle="Solid"/>
+                            <leftPen lineWidth="0.5" lineStyle="Solid"/>
+                            <bottomPen lineWidth="0.5" lineStyle="Solid"/>
+                            <rightPen lineWidth="0.5" lineStyle="Solid"/>
+                        </box>
+                        <textElement verticalAlignment="Middle">
+                            <font fontName="Arial Narrow" size="11" isBold="false"/>
+                        </textElement>
+                        <textFieldExpression><![CDATA["Kodulindude kategooria"]]></textFieldExpression>
+                    </textField>
+                    <textField isStretchWithOverflow="true" isBlankWhenNull="true">
+                        <reportElement stretchType="RelativeToTallestObject" x="196" y="0" width="277" height="23" uuid="6a8c4e04-4278-4595-845f-67be590d9210"/>
+                        <box topPadding="1" leftPadding="5" bottomPadding="1" rightPadding="1">
+                            <topPen lineWidth="0.5" lineStyle="Solid"/>
+                            <leftPen lineWidth="0.5" lineStyle="Solid"/>
+                            <bottomPen lineWidth="0.5" lineStyle="Solid"/>
+                            <rightPen lineWidth="0.5" lineStyle="Solid"/>
+                        </box>
+                        <textElement verticalAlignment="Middle">
+                            <font fontName="Arial Narrow" size="11"/>
+                        </textElement>
+                        <textFieldExpression><![CDATA[$F{kodulinnudKatTekst}]]></textFieldExpression>
+                    </textField>
+                </frame>
+                <!-- $F{kodulinnudKatTekst} -->
+
+            </frame>
+            <!-- END LOAGA_VEDAMINE_MAA END-->
