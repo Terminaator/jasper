@@ -162,7 +162,7 @@ veovahendEnd = '''
 frameStart = '''
             <!-- start REPLACE_TYPE start-->
             <frame>
-                <reportElement x="0" y="23" width="473" height="0" isRemoveLineWhenBlank="true" uuid="0140ba9b-f2f0-494c-82bc-caf6b5efc63e">
+                <reportElement x="0" y="0" width="473" height="0" isRemoveLineWhenBlank="true" uuid="0140ba9b-f2f0-494c-82bc-caf6b5efc63e">
                     <printWhenExpression><![CDATA[$F{tegevuseYldnimetus}.getKood().equals("REPLACE_TYPE")]]></printWhenExpression>
                 </reportElement>
 '''

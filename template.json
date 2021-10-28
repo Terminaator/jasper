@@ -1,9 +1,14 @@
 {
     "tegevusalad": [
         {
-            "__comment__": "Maismaaloomade vedamine",
-            "type": "LOAGA_VEDAMINE_MAA",
+            "__comment__": "Loomade karantiniseerimine",
+            "type": "LOAGA_KARANTINISEERIMINE",
             "frames": [
+                {
+                    "parameter": "$F{tegevuseYldnimetus}.getNimetus()",
+                    "title": "\"Tegevuse üldnimetus\"",
+                    "check": "$F{tegevuseYldnimetus} != null"
+                },
                 {
                     "parameter": "$F{loomaliik}.getNimetus()",
                     "title": "\"Loomaliik\"",
@@ -25,19 +30,76 @@
                     "check": "$F{emtak} != null"
                 },
                 {
+                    "parameter": "$F{maksimumvoimsus}",
+                    "title": "\"Maksimumvõimsus\"",
+                    "check": "$F{maksimumvoimsus} != null"
+                }
+            ]
+        },
+        {
+            "__comment__": "Veeandide ettevõte tauditõrje tegemiseks",
+            "type": "LOAGA_TAUDITORJE_ETTEV",
+            "frames": [
+                {
+                    "parameter": "$F{tegevuseYldnimetus}.getNimetus()",
+                    "title": "\"Tegevuse üldnimetus\"",
+                    "check": "$F{tegevuseYldnimetus} != null"
+                },
+                {
+                    "parameter": "$F{loomaliik}.getNimetus()",
+                    "title": "\"Loomaliik\"",
+                    "check": "$F{loomaliik} != null"
+                },
+                {
+                    "parameter": "$F{tegevusalaNimetus}.getNimetus()",
+                    "title": "\"Tegevusala nimetus\"",
+                    "check": "$F{tegevusalaNimetus} != null"
+                },
+                {
+                    "parameter": "$F{tegevusalaTapsustus}.getNimetus()",
+                    "title": "\"Tegevusala täpsustus\"",
+                    "check": "$F{tegevusalaTapsustus} != null"
+                },
+                {
+                    "parameter": "$F{emtak}.getNimetus() + \" \" + $F{emtak}.getKood()",
+                    "title": "\"Klassifikaatori kohane nimetus/EMTAK\"",
+                    "check": "$F{emtak} != null"
+                }
+            ]
+        },
+        {
+            "__comment__": "Keskkonnast eraldatud ettevõte kimalaste teise liikmesriiki viimiseks",
+            "type": "LOAGA_KIMALASED_TEISE_RIIKI",
+            "frames": [
+                {
+                    "parameter": "$F{tegevuseYldnimetus}.getNimetus()",
+                    "title": "\"Tegevuse üldnimetus\"",
+                    "check": "$F{tegevuseYldnimetus} != null"
+                },
+                {
+                    "parameter": "$F{loomaliik}.getNimetus()",
+                    "title": "\"Loomaliik\"",
+                    "check": "$F{loomaliik} != null"
+                },
+                {
+                    "parameter": "$F{tegevusalaNimetus}.getNimetus()",
+                    "title": "\"Tegevusala nimetus\"",
+                    "check": "$F{tegevusalaNimetus} != null"
+                },
+                {
+                    "parameter": "$F{emtak}.getNimetus() + \" \" + $F{emtak}.getKood()",
+                    "title": "\"Klassifikaatori kohane nimetus/EMTAK\"",
+                    "check": "$F{emtak} != null"
+                },
+                {
+                    "parameter": "$F{tegevuskohaKirjeldus}",
+                    "title": "\"Tegevuskoha kirjeldus\"",
+                    "check": "$F{tegevuskohaKirjeldus} != null"
+                },
+                {
                     "parameter": "Math.round($F{loomadeArv})",
-                    "title": "\"Loomade arv/hulk\"",
+                    "title": "\"Perede arv\"",
                     "check": "$F{loomadeArv} != null"
-                },
-                {
-                    "parameter": "$F{kabiloomadKatTekst}",
-                    "title": "\"Kabiloomade kategooria\"",
-                    "check": "$F{kabiloomadKatTekst} != null"
-                },
-                {
-                    "parameter": "$F{kodulinnudKatTekst}",
-                    "title": "\"Kodulindude kategooria\"",
-                    "check": "$F{kodulinnudKatTekst} != null"
                 }
             ]
         }

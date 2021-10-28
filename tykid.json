@@ -1,0 +1,12 @@
+[
+    {
+        "parameter": "$F{maksimumvoimsus}",
+        "title": "\"Maksimumvõimsus\"",
+        "check": "$F{maksimumvoimsus} != null"
+    },
+    {
+        "parameter": "$F{tegevuskohaKirjeldus}",
+        "title": "\"Tegevuskoha kirjeldus\"",
+        "check": "$F{tegevuskohaKirjeldus} != null"
+    }
+]
